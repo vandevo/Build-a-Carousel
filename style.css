@@ -17,10 +17,18 @@
     the edges of the slides, but adequately spaced
 */
 
+html {
+    font-family: 'Nunito', sans-serif;
+}
 
 .carousel {
     max-width: 600px;
     position: relative;
+    
+}
+
+.carousel img {
+    border-radius: 10px;
 }
 
 .carousel-item {
@@ -48,4 +56,25 @@
     justify-content: space-between;
     width: 100%;
     top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    background-color: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 15px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 15px;
 }
