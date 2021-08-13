@@ -20,6 +20,7 @@ btnPrev.addEventListener("click", moveToPrevSlide);
 btnNext.addEventListener("click", moveToNextSlide);
 
 function hideAllSlides(){
+    //for (let slide = 0 ; slide < slides.length ; slide++){
     for (let slide of slides){
         slide.classList.remove("carousel-item-visible");
         slide.classList.add("carousel-item-hidden");
