@@ -28,7 +28,7 @@ html {
 }
 
 .carousel img {
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .carousel .carousel-item,
@@ -39,6 +39,7 @@ html {
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 
@@ -78,3 +79,11 @@ html {
     margin-right: 15px;
 }
 
+@keyframes fadeVisibility {
+    0%{
+        opacity: 0;
+    };
+    100%{
+        opacity: 1;
+    }
+};
